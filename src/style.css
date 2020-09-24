@@ -1,0 +1,22 @@
+:root {
+  --note: skyblue;
+  --success: turquoise;
+  --error: magenta;
+  --warning: gold;
+}
+
+body {
+  font-size:14px;
+}
+.success {
+  color: var(--success);
+}
+.error {
+  color: var(--error);
+}
+.warning {
+  color: var(--warning);
+}
+li > ul {
+  color: var(--note);
+}
