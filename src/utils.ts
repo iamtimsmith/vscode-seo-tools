@@ -1,3 +1,5 @@
+import { count } from "console";
+
 interface Ifrontmatter {
   [key: string]: string
 }
@@ -80,4 +82,18 @@ export const checkAltTags = (text: string) => {
     if (length < 1) errors.push(imgs[i]);
   }
   return errors;
+}
+
+/**
+ * @description Count the number of a given heading
+ * @param text
+ * @param heading
+ */
+export const countHeadings = (text: string, heading: string) => {
+  let type = parseInt(heading[1]);
+  const search = new RegExp("(\s\#{" + type + "}\s)", `g`);
+  const count = text.match(search) || [];
+  
+  console.log(count.length, search.global);
+  return count;
 }

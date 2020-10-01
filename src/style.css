@@ -1,12 +1,21 @@
-:root {
-  --note: skyblue;
-  --success: turquoise;
-  --error: magenta;
+body.vscode-light {
+  --note: #333333;
+  --success:green;
+  --error: red;
   --warning: gold;
 }
 
+body.vscode-dark {
+  --note: #999999;
+  --success:#A3BE8C;
+  --error: #BF616A;
+  --warning: #EBCB8B;
+}
+
 body {
-  font-size:14px;
+  font-size:16px;
+  line-height: 1.5;
+  padding-bottom: 100px;
 }
 .success {
   color: var(--success);
@@ -19,4 +28,48 @@ body {
 }
 li > ul {
   color: var(--note);
+}
+
+.serp-preview {
+  background: white;
+  color: #333;
+  border: 1px solid #aaa;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 15px;
+}
+.serp-preview p {
+  margin: 0;
+}
+.serp-title {
+  color: blue;
+  font-weight: bold;
+}
+.serp-url {
+  color: green;
+  font-size: 12px;
+}
+
+.twitter-card {
+  background: white;
+  color: #333;
+  border: 1px solid #aaa;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 400px;
+}
+.twitter-header {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.twitter-profile-img {
+  border-radius: 5px;
+  display: inline-block;
+}
+.twitter-profile {
+  display: inline-block;
+  margin-left: 10px;
+}
+.twitter-profile p {
+  margin: 0;
 }
